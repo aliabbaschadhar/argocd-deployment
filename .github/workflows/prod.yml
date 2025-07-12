@@ -28,7 +28,3 @@ jobs:
           file: Dockerfile
           push: true
           tags: aliabbaschadhar003/shaka-app:${{github.sha}}
-        
-      - name: Clone staging-ops repo, update image tags, and push tags
-        env:
-          PAT: ${{secrets.PAT}}
